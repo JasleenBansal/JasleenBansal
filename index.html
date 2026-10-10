@@ -105,7 +105,15 @@
     #contact a {
       color: #444;
     }
-
+.project-image {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  margin: 16px 0;
+  border-radius: 6px;
+  background: #f7f7f7;
+}
     @media (max-width: 600px) {
       body {
         margin: 32px auto;
@@ -155,6 +163,11 @@
   <section id="projects">
     
     <div class="project">
+      <img
+  src="images/pick-and-place.png"
+  alt="SolidWorks model of the pick-and-place mechanism"
+  class="project-image"
+>
       <p class="tag">MECHANICAL DESIGN</p>
       <h3>Pick-and-Place Mechanism</h3>
       <p>
