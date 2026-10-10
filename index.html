@@ -105,14 +105,34 @@
     #contact a {
       color: #444;
     }
-.project-image {
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.project-gallery img {
   display: block;
   width: 100%;
-  max-height: 360px;
+  height: 180px;
   object-fit: contain;
-  margin: 16px 0;
   border-radius: 6px;
-  background: #f7f7f7;
+  border: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+  .project-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .project-gallery img {
+    height: 140px;
+  }
+}
+
 }
     @media (max-width: 600px) {
       body {
@@ -163,11 +183,24 @@
   <section id="projects">
     
     <div class="project">
-      <img
-  src="images/Claw_Gripper.jpg"
-  alt="SolidWorks model of the pick-and-place mechanism"
-  class="project-image"
->
+      
+<div class="project-gallery">
+  <img
+    src="images/Claw_Gripper.png"
+    alt="Full SolidWorks assembly of the pick-and-place mechanism"
+  >
+
+  <img
+    src="images/pick-and-place-gripper.png"
+    alt="Close-up of the servo-actuated gripper"
+  >
+
+  <img
+    src="images/pick-and-place-prototype.png"
+    alt="Physical prototype of the pick-and-place mechanism"
+  >
+</div>
+
       <p class="tag">MECHANICAL DESIGN</p>
       <h3>Pick-and-Place Mechanism</h3>
       <p>
