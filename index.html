@@ -220,6 +220,19 @@
       height: 140px;
     }
   }
+  
+/* Two gripper photos — centered side by side */
+.gripper-image-row {
+  justify-content: center;
+  gap: 24px;
+}
+
+.gripper-image-row img {
+  width: calc((100% - 24px) / 2);
+  height: 260px;
+  object-fit: contain;
+}
+
 </style>
 
 </head>
@@ -249,7 +262,7 @@
 
   <div class="project">
 
-    <div class="project-image-row">
+    <div class="project-image-row gripper-image-row">
       <img
         src="images/Claw_Gripper.png"
         alt="3D-printed servo-actuated gripper"
