@@ -175,6 +175,26 @@
     .reflex-home-image {
   height: 200px;
 }
+    
+.project-image-row {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.project-image-row img {
+  width: calc((100% - 24px) / 3);
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .project-image-row img {
+    height: 100px;
+  }
+}
+
   </style>
 </head>
 
@@ -294,11 +314,22 @@
 
     <div class="project">
       <p class="tag">FACILITY PLANNING · SAFETY</p>
-<img
-  src="images/Warehouse.png"
-  alt="AutoCAD warehouse fire escape plan"
-  class="project-image"
->
+
+<div class="project-image-row">
+  <img
+    src="images/Feed_Gripper.png"
+    alt="Physical feed gripper components"
+  >
+  <img
+    src="images/Kevins_Sprocket.png"
+    alt="Physical kiln dryer door double sprocket"
+  >
+  <img
+    src="images/Sprocket_Assem.png"
+    alt="Physical conveyor shaft and sprocket assembly"
+  >
+</div>
+
       <h3>Warehouse Fire Escape Plans</h3>
       <p>
         Updated AutoCAD facility layouts and prepared fire evacuation plans for nine locations. Verified dimensions of all rooms, marked emergency exits, safety equipment, and primary and secondary evacuation routes to make emergency procedures clearer.
