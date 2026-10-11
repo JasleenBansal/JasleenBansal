@@ -143,7 +143,13 @@
     }
     .image-row.single-image {
   grid-template-columns: minmax(0, 1fr);
-  max-width: 800px;
+  max-width: 100%;
+}
+
+.image-row.single-image img {
+  height: 420px;
+  width: 100%;
+  object-fit: contain;
 }
 /* Larger images for Project 03 — Conveyor Shaft Assembly */
 .project-section:nth-of-type(3) .image-row img {
