@@ -194,6 +194,26 @@
     height: 100px;
   }
 }
+    
+.project-image-row {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.project-image-row img {
+  width: calc((100% - 24px) / 3);
+  height: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .project-image-row img {
+    height: 130px;
+  }
+}
+
 
   </style>
 </head>
@@ -295,11 +315,20 @@
 
     <div class="project">
       <p class="tag">INDUSTRIAL MECHANICAL COMPONENTS</p>
-      <img
-  src="images/Feed_Gripper.png"
-  alt="Physical feed gripper components"
-  class="project-image"
->
+     <div class="project-image-row">
+  <img
+    src="images/Feed_Gripper.png"
+    alt="Physical feed gripper components"
+  >
+  <img
+    src="images/Kevins_Sprocket.png"
+    alt="Physical kiln dryer door double sprocket"
+  >
+  <img
+    src="images/Sprocket_Assem.png"
+    alt="Physical conveyor shaft and sprocket assembly"
+  >
+</div>
 
 <h3>Industrial Component Reverse Engineering &amp; CAD</h3>
 
@@ -315,20 +344,11 @@
     <div class="project">
       <p class="tag">FACILITY PLANNING · SAFETY</p>
 
-<div class="project-image-row">
-  <img
-    src="images/Feed_Gripper.png"
-    alt="Physical feed gripper components"
-  >
-  <img
-    src="images/Kevins_Sprocket.png"
-    alt="Physical kiln dryer door double sprocket"
-  >
-  <img
-    src="images/Sprocket_Assem.png"
-    alt="Physical conveyor shaft and sprocket assembly"
-  >
-</div>
+<img
+  src="images/Warehouse.png"
+  alt="AutoCAD warehouse fire escape plan"
+  class="project-image"
+>
 
       <h3>Warehouse Fire Escape Plans</h3>
       <p>
