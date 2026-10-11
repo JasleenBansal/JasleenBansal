@@ -85,7 +85,7 @@
     .image-row {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
+      gap: 20px;
       align-items: start;
       margin: 20px 0;
     }
@@ -98,7 +98,8 @@
     .image-row img {
       display: block;
       width: 100%;
-      height: auto;
+      height: 240px;
+      object-fit: contain;
       border-radius: 6px;
     }
 
@@ -134,6 +135,11 @@
       .image-row {
         grid-template-columns: 1fr;
       }
+
+      .image-row img {
+        height: auto;
+        max-height: 320px;
+      }
     }
   </style>
 </head>
@@ -151,11 +157,12 @@
   </p>
 
   <p class="project-intro">
-    This shows three industrial component projects involving
+    This page highlights three industrial component projects involving
     physical hardware, CAD modeling, and engineering drawings. The work
-    focused on documenting the existing components and applying mechanical
-    design considerations to support maintenance, fabrication, and replacement.
+    focused on existing components and mechanical design considerations
+    to support maintenance, fabrication, and replacement.
   </p>
+
 
   <!-- PROJECT 1: FEED GRIPPER COMPONENTS -->
 
@@ -164,65 +171,54 @@
     <h2>01 — Feed Gripper Components</h2>
 
     <p class="subtitle">
-      AutoCAD · Component Documentation
+      AutoCAD · Component Drawings
     </p>
 
     <p>
-      Created AutoCAD drawings of a feed gripper’s threaded shaft and wheel to support component replacement and maintenance.
+      Created AutoCAD drawings of a feed gripper’s threaded shaft and wheel
+      to support component replacement and maintenance.
     </p>
 
-    <h3>Original Components</h3>
+    <h3>AutoCAD Wheel Drawing</h3>
 
     <img
-      src="../images/Feed_Gripper.png"
-      alt="Physical feed gripper assembly"
+      src="../images/Wheel.png"
+      alt="AutoCAD drawing of the feed gripper wheel"
       class="project-image"
+      loading="lazy"
     >
 
     <p class="image-note">
-      Original feed gripper components.
+      Wheel — AutoCAD drawing.
     </p>
 
-    <h3>AutoCAD Drawings</h3>
+    <h3>Original Component &amp; Shaft Drawing</h3>
 
-    
-<h3>AutoCAD Wheel Drawing</h3>
+    <div class="image-row">
 
-<img
-  src="../images/Wheel.png"
-  alt="AutoCAD drawing of the feed gripper wheel"
-  class="project-image"
-  loading="lazy"
->
+      <figure>
+        <img
+          src="../images/Feed_Gripper.png"
+          alt="Physical feed gripper components"
+          loading="lazy"
+        >
+        <figcaption>
+          Original feed gripper components
+        </figcaption>
+      </figure>
 
-<p class="image-note">
-  Wheel — AutoCAD drawing.
-</p>
+      <figure>
+        <img
+          src="../images/Threaded_Shaft.png"
+          alt="AutoCAD drawing of the feed gripper threaded shaft"
+          loading="lazy"
+        >
+        <figcaption>
+          Threaded shaft — AutoCAD drawing
+        </figcaption>
+      </figure>
 
-<h3>Original Component &amp; Shaft Drawing</h3>
-
-<div class="image-row">
-
-  <figure>
-    <img
-      src="../images/Feed_Gripper.png"
-      alt="Physical feed gripper components"
-      loading="lazy"
-    >
-    <figcaption>Original feed gripper components</figcaption>
-  </figure>
-
-  <figure>
-    <img
-      src="../images/Threaded_Shaft.png"
-      alt="AutoCAD drawing of the feed gripper threaded shaft"
-      loading="lazy"
-    >
-    <figcaption>Threaded shaft — AutoCAD drawing</figcaption>
-  </figure>
-
-</div>
-
+    </div>
 
   </section>
 
@@ -238,29 +234,50 @@
     </p>
 
     <p>
-      Created AutoCAD shaft and assembly drawings for a kiln dryer door double-sprocket mechanism to support maintenance and replacement.
+      Created AutoCAD shaft and assembly drawings for a kiln dryer door
+      double-sprocket mechanism to support maintenance and replacement.
     </p>
 
-    
-<h3>AutoCAD Assembly Drawing</h3>
+    <h3>AutoCAD Assembly Drawing</h3>
 
-<img
-  src="../images/Kevin_Assembly.png"
-  alt="AutoCAD assembly drawing for the kiln dryer door double sprocket"
-  class="project-image"
-  loading="lazy"
->
+    <img
+      src="../images/Kevin_Assembly.png"
+      alt="AutoCAD assembly drawing for the kiln dryer door double sprocket"
+      class="project-image"
+      loading="lazy"
+    >
 
-<p class="image-note">
-  Assembly — AutoCAD drawing.
-</p>
+    <p class="image-note">
+      Assembly — AutoCAD drawing.
+    </p>
 
-<h3>Original Component &amp; Shaft Drawing</h3>
+    <h3>Original Component &amp; Shaft Drawing</h3>
 
+    <div class="image-row">
 
-</div>
+      <figure>
+        <img
+          src="../images/Kevin_Sprocket.png"
+          alt="Physical kiln dryer door double-sprocket component"
+          loading="lazy"
+        >
+        <figcaption>
+          Original double-sprocket component
+        </figcaption>
+      </figure>
 
+      <figure>
+        <img
+          src="../images/Kevin_Shaft.png"
+          alt="AutoCAD shaft drawing for the kiln dryer door sprocket"
+          loading="lazy"
+        >
+        <figcaption>
+          Shaft — AutoCAD drawing
+        </figcaption>
+      </figure>
 
+    </div>
 
   </section>
 
@@ -277,33 +294,37 @@
 
     <p>
       Modeled an existing conveyor shaft and sprocket assembly in SolidWorks.
-      Evaluated the weld
-      requirements to maintain clearance between the weld and the chain.
+      Evaluated the weld requirements to maintain clearance between the weld
+      and the chain.
     </p>
-
-    <h3>Original Assembly</h3>
 
     <h3>Original Assembly &amp; SolidWorks Model</h3>
 
-<div class="image-row">
+    <div class="image-row">
 
-  <figure>
-    <img
-      src="../images/Sprocket_Assem.png"
-      alt="Physical conveyor shaft and sprocket assembly"
-      loading="lazy"
-    >
-    <figcaption>Original conveyor shaft assembly</figcaption>
-  </figure>
+      <figure>
+        <img
+          src="../images/Sprocket_Assem.png"
+          alt="Physical conveyor shaft and sprocket assembly"
+          loading="lazy"
+        >
+        <figcaption>
+          Original conveyor shaft assembly
+        </figcaption>
+      </figure>
 
-  <figure>
-    <img
-      src="../images/AutoCADShaft.png"
-      alt="SolidWorks model of the conveyor shaft"
-      loading="lazy"
-    >
-    <figcaption>Conveyor shaft — SolidWorks model</figcaption>
-  </figure>
+      <figure>
+        <img
+          src="../images/AutoCADShaft.png"
+          alt="SolidWorks model of the conveyor shaft"
+          loading="lazy"
+        >
+        <figcaption>
+          Conveyor shaft — SolidWorks model
+        </figcaption>
+      </figure>
+
+    </div>
 
     <p>
       Determined the weld type and calculated the maximum allowable weld
