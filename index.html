@@ -6,233 +6,223 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jasleen Bansal | Engineering Portfolio</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 32px;
-      line-height: 1.7;
-      color: #222;
-      box-sizing: border-box;
-    }
+  ```css
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 32px;
+    line-height: 1.7;
+    color: #222;
+    box-sizing: border-box;
+  }
 
-    nav {
-      margin-bottom: 70px;
-    }
+  nav {
+    margin-bottom: 70px;
+  }
 
-    nav a {
-      margin-right: 20px;
-      color: #444;
-      text-decoration: none;
-    }
+  nav a {
+    margin-right: 20px;
+    color: #444;
+    text-decoration: none;
+  }
 
-    nav a:hover {
-      color: #000;
-    }
+  nav a:hover {
+    color: #000;
+  }
 
-    h1 {
-      font-size: 44px;
-      line-height: 1.2;
-      margin-bottom: 12px;
-    }
+  h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
 
-    h2 {
-      font-size: 30px;
-      margin-top: 60px;
-      margin-bottom: 12px;
-    }
+  h2 {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 12px;
+  }
 
-    #about h2 {
-      font-size: 22px;
-      font-weight: normal;
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
+  #about h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 
-    section {
-      margin-bottom: 80px;
-    }
+  section {
+    margin-bottom: 80px;
+  }
 
-    .tag {
-      color: #666;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
+  .tag {
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
 
-    .section-intro {
-      color: #666;
-      max-width: 650px;
-      margin-bottom: 28px;
-    }
+  .section-intro {
+    color: #666;
+    max-width: 650px;
+    margin-bottom: 28px;
+  }
 
-    .project {
-      padding: 24px;
-      margin: 20px 0;
-      border: 1px solid #e5e5e5;
-      border-radius: 10px;
-      background: #fff;
-      transition: border-color 0.2s ease, transform 0.2s ease;
-    }
+  .project {
+    padding: 24px;
+    margin: 20px 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background: #fff;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
 
-    .project:hover {
-      border-color: #aaa;
-      transform: translateY(-2px);
-    }
+  .project:hover {
+    border-color: #aaa;
+    transform: translateY(-2px);
+  }
 
-    .project h3 {
-      margin: 10px 0;
-      font-size: 21px;
-      color: #222;
-    }
+  .project h3 {
+    margin: 10px 0;
+    font-size: 21px;
+    color: #222;
+  }
 
-    .project p {
-      color: #444;
-    }
+  .project p {
+    color: #444;
+  }
 
-    .project .tag {
-      color: #666;
-    }
+  .project .tag {
+    color: #666;
+  }
 
-    .project-tools {
-      font-size: 13px;
-      color: #666;
-      margin-top: 16px;
-    }
+  .project-tools {
+    font-size: 13px;
+    color: #666;
+    margin-top: 16px;
+  }
 
-    #contact a {
-      color: #444;
-    }
-    #contact {
-  padding-top: 24px;
-  border-top: 1px solid #e5e5e5;
-}
+  #contact a {
+    color: #444;
+  }
 
-#contact p {
-  max-width: 600px;
-}
+  #contact {
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e5;
+  }
 
-.project-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin: 20px 0;
-}
+  #contact p {
+    max-width: 600px;
+  }
 
-.project-gallery img {
-  display: block;
-  width: 100%;
-  height: 180px;
-  object-fit: contain;
-  border-radius: 6px;
-  border: 1px solid #eee;
-}
+  /* General project images */
+  .project-image {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+    margin: 12px 0;
+  }
 
-@media (max-width: 600px) {
+  /* Warehouse drawing */
+  .warehouse-home-image {
+    height: 420px;
+  }
+
+  /* Reflex shooter homepage image */
+  .reflex-home-image {
+    height: 200px;
+  }
+
+  /* Three industrial component photos */
+  .project-image-row {
+    display: flex;
+    gap: 4px;
+    margin: 12px 0;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .project-image-row img {
+    width: calc((100% - 8px) / 3);
+    height: 360px;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* Other project image galleries */
   .project-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 20px 0;
   }
 
   .project-gallery img {
-    height: 140px;
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 6px;
+    border: 1px solid #eee;
   }
-}
 
-}
-    @media (max-width: 600px) {
-      body {
-        margin: 32px auto;
-        padding: 0 22px;
-      }
-
-      nav {
-        margin-bottom: 48px;
-      }
-
-      h1 {
-        font-size: 34px;
-      }
-
-      h2 {
-        font-size: 26px;
-      }
-
-      .project {
-        padding: 18px;
-      }
+  @media (max-width: 600px) {
+    body {
+      margin: 32px auto;
+      padding: 0 22px;
     }
+
+    nav {
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      font-size: 34px;
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    .project {
+      padding: 18px;
+    }
+
     .project-image {
-  width: 100%;
-  max-width: 100%;
-  height: 300px;
-  object-fit: contain;
-  display: block;
-  margin: 12px 0;
-}
+      height: 260px;
+    }
+
+    .warehouse-home-image {
+      height: 340px;
+    }
+
     .reflex-home-image {
-  height: 200px;
-}
-    
+      height: 200px;
+    }
 
-.project-image-row {
-  display: flex;
-  gap: 3px;
-  margin: 12px 0;
-  width: 100%;
-  align-items: stretch;
-}
+    .project-image-row {
+      gap: 3px;
+    }
 
-.project-image-row img {
-  width: calc((100% - 6px) / 3);
-  height: 340px;
-  object-fit: contain;
-  display: block;
-}
+    .project-image-row img {
+      width: calc((100% - 6px) / 3);
+      height: 220px;
+    }
 
-@media (max-width: 600px) {
-  .project-image-row img {
-    height: 200px;
+    .project-gallery {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .project-gallery img {
+      height: 140px;
+    }
   }
-}
-
-
-.project-image-row img {
-  width: calc((100% - 24px) / 3);
-  height: 150px;
-  object-fit: contain;
-  display: block;
-}
-
-@media (max-width: 600px) {
-  .project-image-row img {
-    height: 100px;
-  }
-}
-    
-.project-image-row {
-  display: flex;
-  gap: 5px;
-  margin: 12px 0;
-}
-
-.project-image-row img {
-  width: calc((100% - 24px) / 3);
-  height: 200px;
-  object-fit: contain;
-  display: block;
-}
-
-@media (max-width: 600px) {
-  .project-image-row img {
-    height: 130px;
-  }
-}
-
-
-  </style>
+</style>
+```
 </head>
 
 <body>
