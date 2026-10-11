@@ -229,8 +229,20 @@
 
 .gripper-image-row img {
   width: calc((100% - 24px) / 2);
-  height: 260px;
+  height: 390px;
   object-fit: contain;
+}
+
+/* Mobile sizing */
+@media (max-width: 600px) {
+  .gripper-image-row {
+    gap: 12px;
+  }
+
+  .gripper-image-row img {
+    width: calc((100% - 12px) / 2);
+    height: 270px;
+  }
 }
 
 </style>
