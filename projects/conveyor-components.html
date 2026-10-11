@@ -1,86 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conveyor Components | Jasleen Bansal</title>
+
+  <title>Industrial Component Reverse Engineering &amp; CAD | Jasleen Bansal</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
+      max-width: 900px;
       margin: 50px auto;
       padding: 0 28px;
+      font-family: Arial, sans-serif;
       line-height: 1.7;
       color: #222;
     }
 
     a {
-      color: #444;
+      color: #1769aa;
       text-decoration: none;
     }
 
     a:hover {
-      color: #000;
+      text-decoration: underline;
     }
 
-    .tag {
-      color: #666;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      font-size: 14px;
     }
 
     h1 {
-      font-size: 38px;
+      font-size: 36px;
       line-height: 1.2;
       margin-bottom: 12px;
     }
 
     h2 {
-      font-size: 23px;
-      margin-top: 42px;
-      margin-bottom: 10px;
+      font-size: 25px;
+      margin-top: 44px;
+      margin-bottom: 6px;
     }
 
-    p, li {
-      color: #444;
-    }
-
-    .intro {
+    h3 {
       font-size: 18px;
-      color: #555;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-top: 8px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .project-intro {
+      margin-bottom: 32px;
+    }
+
+    .project-section {
+      padding-top: 20px;
+      margin-top: 32px;
+      border-top: 1px solid #e5e5e5;
     }
 
     .project-image {
       display: block;
       width: 100%;
       height: auto;
-      margin: 24px 0;
+      margin: 16px 0;
       border-radius: 6px;
     }
 
-    .back {
-      display: inline-block;
-      margin-bottom: 40px;
+    .image-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      align-items: start;
+      margin: 20px 0;
     }
 
-    footer {
-      margin-top: 60px;
+    .image-row figure {
+      margin: 0;
+      min-width: 0;
+    }
+
+    .image-row img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      color: #666;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .image-note {
+      color: #666;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .footer-link {
+      margin-top: 44px;
       padding-top: 20px;
       border-top: 1px solid #e5e5e5;
-      font-size: 14px;
     }
 
     @media (max-width: 600px) {
       body {
-        margin: 30px auto;
-        padding: 0 20px;
+        margin: 28px auto;
+        padding: 0 18px;
       }
 
       h1 {
-        font-size: 31px;
+        font-size: 30px;
+      }
+
+      .image-row {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -88,74 +140,187 @@
 
 <body>
 
-  <a class="back" href="../index.html">← Back to Portfolio</a>
+  <a class="back-link" href="../index.html">
+    ← Back to Portfolio
+  </a>
 
-  <p class="tag">REVERSE ENGINEERING · INDUSTRIAL MECHANICAL DESIGN</p>
+  <h1>Industrial Component Reverse Engineering &amp; CAD</h1>
 
-  <h1>Conveyor Shaft & Sprocket Assemblies</h1>
-
-  <p class="intro">
-    Recreated industrial mechanical components from physical parts,
-    incorporating requested design modifications and producing
-    dimensioned manufacturing drawings.
+  <p class="subtitle">
+    Brampton Brick Limited · AutoCAD · SolidWorks · Mechanical Design
   </p>
 
-  <h2>Project Overview</h2>
-
-  <p>
-    At Brampton Brick Limited, I worked on replacement
-    and modified components for existing equipment. The work supported
-    the replacement of worn or failed parts and the preparation of
-    components for planned plant shutdown maintenance.
+  <p class="project-intro">
+    This collection highlights three industrial component projects involving
+    physical hardware, CAD modeling, and engineering drawings. The work
+    focused on documenting existing components and applying mechanical
+    design considerations to support maintenance, fabrication, and replacement.
   </p>
 
-  <p>
-    Since the original components were available physically, I took
-    measurements directly from the parts and used them as the basis
-    for CAD models and manufacturing drawings.
-  </p>
 
-  <h2>Contributions</h2>
+  <!-- PROJECT 1: FEED GRIPPER COMPONENTS -->
 
-  <ul>
-    <li>
-      Measured existing physical components to obtain the dimensions
-      needed for CAD modelling.
-    </li>
-    <li>
-      Drafted component models and created AutoCAD and/or SolidWorkds drawings based on the measured geometry.
-    </li>
-    <li>
-      Incorporated requested design modifications to address
-      component changes and replacement requirements.
-    </li>
-    <li>
-      Produced dimensioned manufacturing drawings to communicate
-      component geometry and specifications.
-    </li>
-  </ul>
+  <section class="project-section">
 
-  <h2>Application</h2>
+    <h2>01 — Feed Gripper Components</h2>
 
-  <p>
-    The drawings supported maintenance preparation for components
-    that had failed, were worn, or were being considered for
-    modification ahead of scheduled shutdown periods.
-  </p>
+    <p class="subtitle">
+      AutoCAD · Component Documentation
+    </p>
 
-  <h2>Summary</h2>
+    <p>
+      Documented existing feed gripper components by translating physical
+      hardware into AutoCAD drawings. The work included drawings of a
+      threaded shaft and wheel to capture their geometry for engineering
+      reference and component replacement.
+    </p>
 
-  <ul>
-    <li>Reverse engineering from physical components</li>
-    <li>Dimensional measurement and CAD modelling</li>
-    <li>Engineering drawing and dimensioning</li>
-    <li>Design modifications and maintenance support</li>
-    <li>Industrial engineering documentation</li>
-  </ul>
+    <h3>Original Components</h3>
 
-  <footer>
-    <a href="../index.html">← Back to all projects</a>
-  </footer>
+    <img
+      src="../images/Feed_Gripper.png"
+      alt="Physical feed gripper assembly"
+      class="project-image"
+    >
+
+    <p class="image-note">
+      Original feed gripper components.
+    </p>
+
+    <h3>AutoCAD Drawings</h3>
+
+    <div class="image-row">
+
+      <figure>
+        <img
+          src="../images/Threaded_Shaft.png"
+          alt="AutoCAD drawing of the feed gripper threaded shaft"
+          loading="lazy"
+        >
+        <figcaption>Threaded shaft — AutoCAD drawing</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="../images/Wheel.png"
+          alt="AutoCAD drawing of the feed gripper wheel"
+          loading="lazy"
+        >
+        <figcaption>Wheel — AutoCAD drawing</figcaption>
+      </figure>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECT 2: KILN DRYER DOOR DOUBLE SPROCKET -->
+
+  <section class="project-section">
+
+    <h2>02 — Kiln Dryer Door Double Sprocket</h2>
+
+    <p class="subtitle">
+      AutoCAD · Shaft and Assembly Drawings
+    </p>
+
+    <p>
+      Documented a kiln dryer door double-sprocket mechanism through
+      AutoCAD shaft and assembly drawings. The drawings captured the
+      component geometry and assembly configuration for engineering
+      reference and maintenance support.
+    </p>
+
+    <h3>Original Component</h3>
+
+    <img
+      src="../images/Kevins_Sprocket.png"
+      alt="Physical kiln dryer door double-sprocket component"
+      class="project-image"
+      loading="lazy"
+    >
+
+    <p class="image-note">
+      Original double-sprocket component.
+    </p>
+
+    <h3>AutoCAD Drawings</h3>
+
+    <div class="image-row">
+
+      <figure>
+        <img
+          src="../images/Kevin_Shaft.png"
+          alt="AutoCAD shaft drawing for the kiln dryer door sprocket"
+          loading="lazy"
+        >
+        <figcaption>Shaft — AutoCAD drawing</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="../images/Kevin_Assembly.png"
+          alt="AutoCAD assembly drawing for the kiln dryer door double sprocket"
+          loading="lazy"
+        >
+        <figcaption>Assembly — AutoCAD drawing</figcaption>
+      </figure>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECT 3: CONVEYOR SHAFT ASSEMBLY -->
+
+  <section class="project-section">
+
+    <h2>03 — Conveyor Shaft Assembly</h2>
+
+    <p class="subtitle">
+      SolidWorks · Mechanical Calculations · Weld Design
+    </p>
+
+    <p>
+      Modeled an existing conveyor shaft and sprocket assembly in SolidWorks.
+      In addition to documenting the component geometry, evaluated the weld
+      requirements to maintain clearance between the weld and the chain.
+    </p>
+
+    <h3>Original Assembly</h3>
+
+    <img
+      src="../images/Sprocket_Assem.png"
+      alt="Physical conveyor shaft and sprocket assembly"
+      class="project-image"
+      loading="lazy"
+    >
+
+    <p class="image-note">
+      Original conveyor shaft assembly.
+    </p>
+
+    <h3>SolidWorks Model and Weld Design</h3>
+
+    <img
+      src="../images/AutoCADShaft.png"
+      alt="SolidWorks model of the conveyor shaft and sprocket"
+      class="project-image"
+      loading="lazy"
+    >
+
+    <p>
+      Determined the weld type and calculated the maximum allowable weld
+      size to maintain chain clearance and support smooth operation.
+    </p>
+
+  </section>
+
+
+  <div class="footer-link">
+    <a href="../index.html">← Back to Portfolio</a>
+  </div>
 
 </body>
 </html>
+
