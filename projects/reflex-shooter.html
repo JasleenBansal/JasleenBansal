@@ -84,6 +84,31 @@
         font-size: 31px;
       }
     }
+    ```css
+.supporting-images {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin: 24px 0;
+}
+
+.supporting-images img {
+  display: block;
+  width: calc(50% - 12px);
+  height: auto;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .supporting-images {
+    flex-direction: column;
+  }
+
+  .supporting-images img {
+    width: 100%;
+  }
+}
+```
   </style>
 </head>
 
