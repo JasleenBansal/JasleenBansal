@@ -176,11 +176,27 @@
   height: 200px;
 }
     
+
 .project-image-row {
   display: flex;
-  gap: 12px;
+  gap: 5px;
   margin: 12px 0;
+  width: 100%;
 }
+
+.project-image-row img {
+  width: calc((100% - 10px) / 3);
+  height: 240px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .project-image-row img {
+    height: 150px;
+  }
+}
+
 
 .project-image-row img {
   width: calc((100% - 24px) / 3);
