@@ -54,13 +54,41 @@
       color: #555;
     }
 
-    .project-image {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 24px 0;
-      border-radius: 6px;
-    }
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 24px 0;
+}
+
+.main-project-image {
+  max-width: 100%;
+}
+
+.supporting-images {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin: 24px 0;
+}
+
+.supporting-images img {
+  display: block;
+  width: calc(50% - 12px);
+  height: auto;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .supporting-images {
+    flex-direction: column;
+  }
+
+  .supporting-images img {
+    width: 100%;
+  }
+}
 
     .back {
       display: inline-block;
@@ -97,23 +125,25 @@
  
 <h2>Project Gallery</h2>
 
+<!-- Main image: finished robot -->
 <img
   src="../images/Card_Dealer.png"
   alt="Fully assembled card-dealing robot"
-  class="project-image"
+  class="project-image main-project-image"
 >
 
-<img
-  src="../images/Base_Construction.png"
-  alt="Physical construction and 3D-printed card-dealing robot components"
-  class="project-image"
->
+<!-- Supporting images: CAD and physical components -->
+<div class="supporting-images">
+  <img
+    src="../images/Card_Base_CAD.png"
+    alt="SolidWorks CAD model of the card-dealing robot base"
+  >
 
-<img
-  src="../images/Card_Base_CAD.png"
-  alt="SolidWorks CAD model of the card-dealing robot base"
-  class="project-image"
->
+  <img
+    src="../images/Base_Construction.png"
+    alt="Physical construction and 3D-printed card-dealing robot components"
+  >
+</div>
 
 
   <p class="intro">
